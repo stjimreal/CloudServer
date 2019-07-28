@@ -1,0 +1,9 @@
+SRCS := ${wildcard *.c}
+OBJS := ${patsubst %.c, %.o, $(SRCS)}
+ELF  := client
+$(ELF):$(OBJS)
+	$(CC) -o $@ $^ -lpthread
+.PHONY: clean rebuild
+clean:
+	rm -rf $(OBJS) 
+rebuild: clean $(ELF)

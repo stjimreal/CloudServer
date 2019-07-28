@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "head.h": "c",
+        "sql.h": "c",
+        "mysql.h": "c",
+        "bashui.h": "c",
+        "trans_thread.h": "c",
+        "stdlib.h": "c",
+        "interfaces.h": "c"
+    }
+}
